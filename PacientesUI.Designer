@@ -1,0 +1,575 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ClinicaApp._JP1._0.UI
+{
+    partial class PacientesUI {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing) {
+            if (disposing && (components != null)) {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent() {
+            this.dgPacientes = new System.Windows.Forms.DataGridView();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.lblTitulo = new System.Windows.Forms.Label();
+            this.lblClose = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.groupBoxFiltros = new System.Windows.Forms.GroupBox();
+            this.btnFiltrarFecha = new System.Windows.Forms.Button();
+            this.btnFiltrarEPS = new System.Windows.Forms.Button();
+            this.btnFiltrarEdad = new System.Windows.Forms.Button();
+            this.btnFiltrarGenero = new System.Windows.Forms.Button();
+            this.txtFechaRegistro = new System.Windows.Forms.TextBox();
+            this.cbxEPS = new System.Windows.Forms.ComboBox();
+            this.txtEdad = new System.Windows.Forms.TextBox();
+            this.cbxGenero = new System.Windows.Forms.ComboBox();
+            this.lblFechaRegistro = new System.Windows.Forms.Label();
+            this.lblEPS = new System.Windows.Forms.Label();
+            this.lblEdad = new System.Windows.Forms.Label();
+            this.lblGenero = new System.Windows.Forms.Label();
+            this.groupBoxDatos = new System.Windows.Forms.GroupBox();
+            this.txtDireccion = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtTelefono = new System.Windows.Forms.TextBox();
+            this.dtFechaNacimiento = new System.Windows.Forms.DateTimePicker();
+            this.cbxEPSDatos = new System.Windows.Forms.ComboBox();
+            this.txtApellido = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtId = new System.Windows.Forms.TextBox();
+            this.lblDireccion = new System.Windows.Forms.Label();
+            this.lblEmail = new System.Windows.Forms.Label();
+            this.lblTelefono = new System.Windows.Forms.Label();
+            this.lblFechaNac = new System.Windows.Forms.Label();
+            this.lblEPSDatos = new System.Windows.Forms.Label();
+            this.lblApellido = new System.Windows.Forms.Label();
+            this.lblNombre = new System.Windows.Forms.Label();
+            this.lblId = new System.Windows.Forms.Label();
+            this.panelBotones = new System.Windows.Forms.Panel();
+            this.btnLimpiar = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnActualizar = new System.Windows.Forms.Button();
+            this.btnGuardar = new System.Windows.Forms.Button();
+            this.btnNuevo = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dgPacientes)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.groupBoxFiltros.SuspendLayout();
+            this.groupBoxDatos.SuspendLayout();
+            this.panelBotones.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // dgPacientes
+            // 
+            this.dgPacientes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgPacientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgPacientes.BackgroundColor = System.Drawing.Color.White;
+            this.dgPacientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgPacientes.Location = new System.Drawing.Point(12, 250);
+            this.dgPacientes.Name = "dgPacientes";
+            this.dgPacientes.ReadOnly = true;
+            this.dgPacientes.RowHeadersWidth = 51;
+            this.dgPacientes.RowTemplate.Height = 24;
+            this.dgPacientes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgPacientes.Size = new System.Drawing.Size(1156, 350);
+            this.dgPacientes.TabIndex = 0;
+            this.dgPacientes.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgPacientes_CellContentDoubleClick);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(39)))), ((int)(((byte)(42)))));
+            this.panel1.Controls.Add(this.lblTitulo);
+            this.panel1.Controls.Add(this.lblClose);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1180, 50);
+            this.panel1.TabIndex = 1;
+            // 
+            // lblTitulo
+            // 
+            this.lblTitulo.AutoSize = true;
+            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold);
+            this.lblTitulo.ForeColor = System.Drawing.Color.White;
+            this.lblTitulo.Location = new System.Drawing.Point(20, 13);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(145, 26);
+            this.lblTitulo.TabIndex = 0;
+            this.lblTitulo.Text = "PACIENTES";
+            // 
+            // lblClose
+            // 
+            this.lblClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblClose.AutoSize = true;
+            this.lblClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold);
+            this.lblClose.ForeColor = System.Drawing.Color.White;
+            this.lblClose.Location = new System.Drawing.Point(1126, 12);
+            this.lblClose.Name = "lblClose";
+            this.lblClose.Size = new System.Drawing.Size(28, 26);
+            this.lblClose.TabIndex = 1;
+            this.lblClose.Text = "X";
+            this.lblClose.Click += new System.EventHandler(this.lblClose_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.groupBoxFiltros);
+            this.panel2.Controls.Add(this.groupBoxDatos);
+            this.panel2.Controls.Add(this.panelBotones);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 50);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1180, 190);
+            this.panel2.TabIndex = 2;
+            // 
+            // groupBoxFiltros
+            // 
+            this.groupBoxFiltros.Controls.Add(this.btnFiltrarFecha);
+            this.groupBoxFiltros.Controls.Add(this.btnFiltrarEPS);
+            this.groupBoxFiltros.Controls.Add(this.btnFiltrarEdad);
+            this.groupBoxFiltros.Controls.Add(this.btnFiltrarGenero);
+            this.groupBoxFiltros.Controls.Add(this.txtFechaRegistro);
+            this.groupBoxFiltros.Controls.Add(this.cbxEPS);
+            this.groupBoxFiltros.Controls.Add(this.txtEdad);
+            this.groupBoxFiltros.Controls.Add(this.cbxGenero);
+            this.groupBoxFiltros.Controls.Add(this.lblFechaRegistro);
+            this.groupBoxFiltros.Controls.Add(this.lblEPS);
+            this.groupBoxFiltros.Controls.Add(this.lblEdad);
+            this.groupBoxFiltros.Controls.Add(this.lblGenero);
+            this.groupBoxFiltros.Location = new System.Drawing.Point(12, 100);
+            this.groupBoxFiltros.Name = "groupBoxFiltros";
+            this.groupBoxFiltros.Size = new System.Drawing.Size(1156, 80);
+            this.groupBoxFiltros.TabIndex = 2;
+            this.groupBoxFiltros.TabStop = false;
+            this.groupBoxFiltros.Text = "Filtros";
+            // 
+            // btnFiltrarFecha
+            // 
+            this.btnFiltrarFecha.Location = new System.Drawing.Point(980, 40);
+            this.btnFiltrarFecha.Name = "btnFiltrarFecha";
+            this.btnFiltrarFecha.Size = new System.Drawing.Size(80, 30);
+            this.btnFiltrarFecha.TabIndex = 11;
+            this.btnFiltrarFecha.Text = "Filtrar";
+            this.btnFiltrarFecha.UseVisualStyleBackColor = true;
+            this.btnFiltrarFecha.Click += new System.EventHandler(this.btnFiltrarFecha_Click);
+            // 
+            // btnFiltrarEPS
+            // 
+            this.btnFiltrarEPS.Location = new System.Drawing.Point(780, 40);
+            this.btnFiltrarEPS.Name = "btnFiltrarEPS";
+            this.btnFiltrarEPS.Size = new System.Drawing.Size(80, 30);
+            this.btnFiltrarEPS.TabIndex = 10;
+            this.btnFiltrarEPS.Text = "Filtrar";
+            this.btnFiltrarEPS.UseVisualStyleBackColor = true;
+            this.btnFiltrarEPS.Click += new System.EventHandler(this.btnFiltrarEPS_Click);
+            // 
+            // btnFiltrarEdad
+            // 
+            this.btnFiltrarEdad.Location = new System.Drawing.Point(580, 40);
+            this.btnFiltrarEdad.Name = "btnFiltrarEdad";
+            this.btnFiltrarEdad.Size = new System.Drawing.Size(80, 30);
+            this.btnFiltrarEdad.TabIndex = 9;
+            this.btnFiltrarEdad.Text = "Filtrar";
+            this.btnFiltrarEdad.UseVisualStyleBackColor = true;
+            this.btnFiltrarEdad.Click += new System.EventHandler(this.btnFiltrarEdad_Click);
+            // 
+            // btnFiltrarGenero
+            // 
+            this.btnFiltrarGenero.Location = new System.Drawing.Point(380, 40);
+            this.btnFiltrarGenero.Name = "btnFiltrarGenero";
+            this.btnFiltrarGenero.Size = new System.Drawing.Size(80, 30);
+            this.btnFiltrarGenero.TabIndex = 8;
+            this.btnFiltrarGenero.Text = "Filtrar";
+            this.btnFiltrarGenero.UseVisualStyleBackColor = true;
+            this.btnFiltrarGenero.Click += new System.EventHandler(this.btnFiltrarGenero_Click);
+            // 
+            // txtFechaRegistro
+            // 
+            this.txtFechaRegistro.Location = new System.Drawing.Point(880, 43);
+            this.txtFechaRegistro.Name = "txtFechaRegistro";
+            this.txtFechaRegistro.Size = new System.Drawing.Size(100, 22);
+            this.txtFechaRegistro.TabIndex = 7;
+            // 
+            // cbxEPS
+            // 
+            this.cbxEPS.FormattingEnabled = true;
+            this.cbxEPS.Location = new System.Drawing.Point(680, 43);
+            this.cbxEPS.Name = "cbxEPS";
+            this.cbxEPS.Size = new System.Drawing.Size(100, 24);
+            this.cbxEPS.TabIndex = 6;
+            // 
+            // txtEdad
+            // 
+            this.txtEdad.Location = new System.Drawing.Point(480, 43);
+            this.txtEdad.Name = "txtEdad";
+            this.txtEdad.Size = new System.Drawing.Size(100, 22);
+            this.txtEdad.TabIndex = 5;
+            // 
+            // cbxGenero
+            // 
+            this.cbxGenero.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxGenero.FormattingEnabled = true;
+            this.cbxGenero.Items.AddRange(new object[] {
+            "Masculino",
+            "Femenino",
+            "Otro"});
+            this.cbxGenero.Location = new System.Drawing.Point(280, 43);
+            this.cbxGenero.Name = "cbxGenero";
+            this.cbxGenero.Size = new System.Drawing.Size(100, 24);
+            this.cbxGenero.TabIndex = 4;
+            // 
+            // lblFechaRegistro
+            // 
+            this.lblFechaRegistro.AutoSize = true;
+            this.lblFechaRegistro.Location = new System.Drawing.Point(877, 20);
+            this.lblFechaRegistro.Name = "lblFechaRegistro";
+            this.lblFechaRegistro.Size = new System.Drawing.Size(106, 17);
+            this.lblFechaRegistro.TabIndex = 3;
+            this.lblFechaRegistro.Text = "Fecha Registro:";
+            // 
+            // lblEPS
+            // 
+            this.lblEPS.AutoSize = true;
+            this.lblEPS.Location = new System.Drawing.Point(677, 20);
+            this.lblEPS.Name = "lblEPS";
+            this.lblEPS.Size = new System.Drawing.Size(36, 17);
+            this.lblEPS.TabIndex = 2;
+            this.lblEPS.Text = "EPS:";
+            // 
+            // lblEdad
+            // 
+            this.lblEdad.AutoSize = true;
+            this.lblEdad.Location = new System.Drawing.Point(477, 20);
+            this.lblEdad.Name = "lblEdad";
+            this.lblEdad.Size = new System.Drawing.Size(39, 17);
+            this.lblEdad.TabIndex = 1;
+            this.lblEdad.Text = "Edad:";
+            // 
+            // lblGenero
+            // 
+            this.lblGenero.AutoSize = true;
+            this.lblGenero.Location = new System.Drawing.Point(277, 20);
+            this.lblGenero.Name = "lblGenero";
+            this.lblGenero.Size = new System.Drawing.Size(59, 17);
+            this.lblGenero.TabIndex = 0;
+            this.lblGenero.Text = "Género:";
+            // 
+            // groupBoxDatos
+            // 
+            this.groupBoxDatos.Controls.Add(this.txtDireccion);
+            this.groupBoxDatos.Controls.Add(this.txtEmail);
+            this.groupBoxDatos.Controls.Add(this.txtTelefono);
+            this.groupBoxDatos.Controls.Add(this.dtFechaNacimiento);
+            this.groupBoxDatos.Controls.Add(this.cbxEPSDatos);
+            this.groupBoxDatos.Controls.Add(this.txtApellido);
+            this.groupBoxDatos.Controls.Add(this.txtNombre);
+            this.groupBoxDatos.Controls.Add(this.txtId);
+            this.groupBoxDatos.Controls.Add(this.lblDireccion);
+            this.groupBoxDatos.Controls.Add(this.lblEmail);
+            this.groupBoxDatos.Controls.Add(this.lblTelefono);
+            this.groupBoxDatos.Controls.Add(this.lblFechaNac);
+            this.groupBoxDatos.Controls.Add(this.lblEPSDatos);
+            this.groupBoxDatos.Controls.Add(this.lblApellido);
+            this.groupBoxDatos.Controls.Add(this.lblNombre);
+            this.groupBoxDatos.Controls.Add(this.lblId);
+            this.groupBoxDatos.Location = new System.Drawing.Point(12, 12);
+            this.groupBoxDatos.Name = "groupBoxDatos";
+            this.groupBoxDatos.Size = new System.Drawing.Size(1156, 80);
+            this.groupBoxDatos.TabIndex = 1;
+            this.groupBoxDatos.TabStop = false;
+            this.groupBoxDatos.Text = "Datos del Paciente";
+            // 
+            // txtDireccion
+            // 
+            this.txtDireccion.Location = new System.Drawing.Point(980, 43);
+            this.txtDireccion.Name = "txtDireccion";
+            this.txtDireccion.Size = new System.Drawing.Size(170, 22);
+            this.txtDireccion.TabIndex = 15;
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.Location = new System.Drawing.Point(780, 43);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(170, 22);
+            this.txtEmail.TabIndex = 14;
+            // 
+            // txtTelefono
+            // 
+            this.txtTelefono.Location = new System.Drawing.Point(580, 43);
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Size = new System.Drawing.Size(170, 22);
+            this.txtTelefono.TabIndex = 13;
+            // 
+            // dtFechaNacimiento
+            // 
+            this.dtFechaNacimiento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtFechaNacimiento.Location = new System.Drawing.Point(380, 43);
+            this.dtFechaNacimiento.Name = "dtFechaNacimiento";
+            this.dtFechaNacimiento.Size = new System.Drawing.Size(170, 22);
+            this.dtFechaNacimiento.TabIndex = 12;
+            // 
+            // cbxEPSDatos
+            // 
+            this.cbxEPSDatos.FormattingEnabled = true;
+            this.cbxEPSDatos.Location = new System.Drawing.Point(280, 43);
+            this.cbxEPSDatos.Name = "cbxEPSDatos";
+            this.cbxEPSDatos.Size = new System.Drawing.Size(100, 24);
+            this.cbxEPSDatos.TabIndex = 11;
+            // 
+            // txtApellido
+            // 
+            this.txtApellido.Location = new System.Drawing.Point(80, 43);
+            this.txtApellido.Name = "txtApellido";
+            this.txtApellido.Size = new System.Drawing.Size(170, 22);
+            this.txtApellido.TabIndex = 10;
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.Location = new System.Drawing.Point(260, 43);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(170, 22);
+            this.txtNombre.TabIndex = 9;
+            // 
+            // txtId
+            // 
+            this.txtId.Location = new System.Drawing.Point(6, 43);
+            this.txtId.Name = "txtId";
+            this.txtId.ReadOnly = true;
+            this.txtId.Size = new System.Drawing.Size(70, 22);
+            this.txtId.TabIndex = 8;
+            // 
+            // lblDireccion
+            // 
+            this.lblDireccion.AutoSize = true;
+            this.lblDireccion.Location = new System.Drawing.Point(977, 20);
+            this.lblDireccion.Name = "lblDireccion";
+            this.lblDireccion.Size = new System.Drawing.Size(67, 17);
+            this.lblDireccion.TabIndex = 7;
+            this.lblDireccion.Text = "Dirección:";
+            // 
+            // lblEmail
+            // 
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.Location = new System.Drawing.Point(777, 20);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(46, 17);
+            this.lblEmail.TabIndex = 6;
+            this.lblEmail.Text = "Email:";
+            // 
+            // lblTelefono
+            // 
+            this.lblTelefono.AutoSize = true;
+            this.lblTelefono.Location = new System.Drawing.Point(577, 20);
+            this.lblTelefono.Name = "lblTelefono";
+            this.lblTelefono.Size = new System.Drawing.Size(64, 17);
+            this.lblTelefono.TabIndex = 5;
+            this.lblTelefono.Text = "Teléfono:";
+            // 
+            // lblFechaNac
+            // 
+            this.lblFechaNac.AutoSize = true;
+            this.lblFechaNac.Location = new System.Drawing.Point(377, 20);
+            this.lblFechaNac.Name = "lblFechaNac";
+            this.lblFechaNac.Size = new System.Drawing.Size(121, 17);
+            this.lblFechaNac.TabIndex = 4;
+            this.lblFechaNac.Text = "Fecha Nacimiento:";
+            // 
+            // lblEPSDatos
+            // 
+            this.lblEPSDatos.AutoSize = true;
+            this.lblEPSDatos.Location = new System.Drawing.Point(277, 20);
+            this.lblEPSDatos.Name = "lblEPSDatos";
+            this.lblEPSDatos.Size = new System.Drawing.Size(36, 17);
+            this.lblEPSDatos.TabIndex = 3;
+            this.lblEPSDatos.Text = "EPS:";
+            // 
+            // lblApellido
+            // 
+            this.lblApellido.AutoSize = true;
+            this.lblApellido.Location = new System.Drawing.Point(77, 20);
+            this.lblApellido.Name = "lblApellido";
+            this.lblApellido.Size = new System.Drawing.Size(62, 17);
+            this.lblApellido.TabIndex = 2;
+            this.lblApellido.Text = "Apellido:";
+            // 
+            // lblNombre
+            // 
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.Location = new System.Drawing.Point(257, 20);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(62, 17);
+            this.lblNombre.TabIndex = 1;
+            this.lblNombre.Text = "Nombre:";
+            // 
+            // lblId
+            // 
+            this.lblId.AutoSize = true;
+            this.lblId.Location = new System.Drawing.Point(3, 20);
+            this.lblId.Name = "lblId";
+            this.lblId.Size = new System.Drawing.Size(22, 17);
+            this.lblId.TabIndex = 0;
+            this.lblId.Text = "ID:";
+            // 
+            // panelBotones
+            // 
+            this.panelBotones.Controls.Add(this.btnLimpiar);
+            this.panelBotones.Controls.Add(this.btnEliminar);
+            this.panelBotones.Controls.Add(this.btnActualizar);
+            this.panelBotones.Controls.Add(this.btnGuardar);
+            this.panelBotones.Controls.Add(this.btnNuevo);
+            this.panelBotones.Location = new System.Drawing.Point(600, 100);
+            this.panelBotones.Name = "panelBotones";
+            this.panelBotones.Size = new System.Drawing.Size(568, 80);
+            this.panelBotones.TabIndex = 0;
+            // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.Location = new System.Drawing.Point(440, 25);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(100, 35);
+            this.btnLimpiar.TabIndex = 4;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.BackColor = System.Drawing.Color.IndianRed;
+            this.btnEliminar.ForeColor = System.Drawing.Color.White;
+            this.btnEliminar.Location = new System.Drawing.Point(340, 25);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(100, 35);
+            this.btnEliminar.TabIndex = 3;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            // 
+            // btnActualizar
+            // 
+            this.btnActualizar.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnActualizar.ForeColor = System.Drawing.Color.White;
+            this.btnActualizar.Location = new System.Drawing.Point(240, 25);
+            this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.Size = new System.Drawing.Size(100, 35);
+            this.btnActualizar.TabIndex = 2;
+            this.btnActualizar.Text = "Actualizar";
+            this.btnActualizar.UseVisualStyleBackColor = false;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.BackColor = System.Drawing.Color.ForestGreen;
+            this.btnGuardar.ForeColor = System.Drawing.Color.White;
+            this.btnGuardar.Location = new System.Drawing.Point(140, 25);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(100, 35);
+            this.btnGuardar.TabIndex = 1;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.UseVisualStyleBackColor = false;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            // 
+            // btnNuevo
+            // 
+            this.btnNuevo.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnNuevo.ForeColor = System.Drawing.Color.White;
+            this.btnNuevo.Location = new System.Drawing.Point(40, 25);
+            this.btnNuevo.Name = "btnNuevo";
+            this.btnNuevo.Size = new System.Drawing.Size(100, 35);
+            this.btnNuevo.TabIndex = 0;
+            this.btnNuevo.Text = "Nuevo";
+            this.btnNuevo.UseVisualStyleBackColor = false;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
+            // 
+            // PacientesUI
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1180, 612);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.dgPacientes);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "PacientesUI";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "PacientesUI";
+            this.Load += new System.EventHandler(this.PacientesUI_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgPacientes)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.groupBoxFiltros.ResumeLayout(false);
+            this.groupBoxFiltros.PerformLayout();
+            this.groupBoxDatos.ResumeLayout(false);
+            this.groupBoxDatos.PerformLayout();
+            this.panelBotones.ResumeLayout(false);
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.DataGridView dgPacientes;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label lblTitulo;
+        private System.Windows.Forms.Label lblClose;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panelBotones;
+        private System.Windows.Forms.Button btnLimpiar;
+        private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.Button btnActualizar;
+        private System.Windows.Forms.Button btnGuardar;
+        private System.Windows.Forms.Button btnNuevo;
+        private System.Windows.Forms.GroupBox groupBoxDatos;
+        private System.Windows.Forms.TextBox txtDireccion;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.TextBox txtTelefono;
+        private System.Windows.Forms.DateTimePicker dtFechaNacimiento;
+        private System.Windows.Forms.ComboBox cbxEPSDatos;
+        private System.Windows.Forms.TextBox txtApellido;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.TextBox txtId;
+        private System.Windows.Forms.Label lblDireccion;
+        private System.Windows.Forms.Label lblEmail;
+        private System.Windows.Forms.Label lblTelefono;
+        private System.Windows.Forms.Label lblFechaNac;
+        private System.Windows.Forms.Label lblEPSDatos;
+        private System.Windows.Forms.Label lblApellido;
+        private System.Windows.Forms.Label lblNombre;
+        private System.Windows.Forms.Label lblId;
+        private System.Windows.Forms.GroupBox groupBoxFiltros;
+        private System.Windows.Forms.Button btnFiltrarFecha;
+        private System.Windows.Forms.Button btnFiltrarEPS;
+        private System.Windows.Forms.Button btnFiltrarEdad;
+        private System.Windows.Forms.Button btnFiltrarGenero;
+        private System.Windows.Forms.TextBox txtFechaRegistro;
+        private System.Windows.Forms.ComboBox cbxEPS;
+        private System.Windows.Forms.TextBox txtEdad;
+        private System.Windows.Forms.ComboBox cbxGenero;
+        private System.Windows.Forms.Label lblFechaRegistro;
+        private System.Windows.Forms.Label lblEPS;
+        private System.Windows.Forms.Label lblEdad;
+        private System.Windows.Forms.Label lblGenero;
+    }
+}

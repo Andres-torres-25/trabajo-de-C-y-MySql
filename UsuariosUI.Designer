@@ -1,0 +1,370 @@
+﻿private void InitializeComponent() {
+    this.dgUsuarios = new System.Windows.Forms.DataGridView();
+    this.panel1 = new System.Windows.Forms.Panel();
+    this.lblCerrar = new System.Windows.Forms.Label();
+    this.lblTitulo = new System.Windows.Forms.Label();
+    this.panel2 = new System.Windows.Forms.Panel();
+    this.panelFoto = new System.Windows.Forms.Panel();
+    this.picEliminarFoto = new System.Windows.Forms.PictureBox();
+    this.picBuscarFoto = new System.Windows.Forms.PictureBox();
+    this.picFoto = new System.Windows.Forms.PictureBox();
+    this.panelDatos = new System.Windows.Forms.Panel();
+    this.lblEmail = new System.Windows.Forms.Label();
+    this.txtEmail = new System.Windows.Forms.TextBox();
+    this.lblApellido = new System.Windows.Forms.Label();
+    this.txtApellido = new System.Windows.Forms.TextBox();
+    this.lblNombre = new System.Windows.Forms.Label();
+    this.txtNombre = new System.Windows.Forms.TextBox();
+    this.lblPassword = new System.Windows.Forms.Label();
+    this.txtPassword = new System.Windows.Forms.TextBox();
+    this.lblUserName = new System.Windows.Forms.Label();
+    this.txtUserName = new System.Windows.Forms.TextBox();
+    this.lblId = new System.Windows.Forms.Label();
+    this.txtId = new System.Windows.Forms.TextBox();
+    this.lblRol = new System.Windows.Forms.Label();
+    this.cbxRol = new System.Windows.Forms.ComboBox();
+    this.lblFechaCreacion = new System.Windows.Forms.Label();
+    this.dtFechaCreacion = new System.Windows.Forms.DateTimePicker();
+    this.panelBotones = new System.Windows.Forms.Panel();
+    this.btnEliminar = new System.Windows.Forms.Button();
+    this.btnActualizar = new System.Windows.Forms.Button();
+    this.btnGuardar = new System.Windows.Forms.Button();
+    this.btnNuevo = new System.Windows.Forms.Button();
+    ((System.ComponentModel.ISupportInitialize)(this.dgUsuarios)).BeginInit();
+    this.panel1.SuspendLayout();
+    this.panel2.SuspendLayout();
+    this.panelFoto.SuspendLayout();
+    ((System.ComponentModel.ISupportInitialize)(this.picEliminarFoto)).BeginInit();
+    ((System.ComponentModel.ISupportInitialize)(this.picBuscarFoto)).BeginInit();
+    ((System.ComponentModel.ISupportInitialize)(this.picFoto)).BeginInit();
+    this.panelDatos.SuspendLayout();
+    this.panelBotones.SuspendLayout();
+    this.SuspendLayout();
+    
+    // **PANEL SUPERIOR (Título + X)**
+    this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21))), ((int)(((byte)(19))), ((int)(((byte)(20)))));
+    this.panel1.Controls.Add(this.lblCerrar);
+    this.panel1.Controls.Add(this.lblTitulo);
+    this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+    this.panel1.Location = new System.Drawing.Point(0, 0);
+    this.panel1.Name = "panel1";
+    this.panel1.Size = new System.Drawing.Size(1000, 50);
+    this.panel1.TabIndex = 0;
+
+    this.lblCerrar.AutoSize = true;
+    this.lblCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
+    this.lblCerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
+    this.lblCerrar.ForeColor = System.Drawing.Color.White;
+    this.lblCerrar.Location = new System.Drawing.Point(950, 15);
+    this.lblCerrar.Name = "lblCerrar";
+    this.lblCerrar.Size = new System.Drawing.Size(29, 24);
+    this.lblCerrar.TabIndex = 1;
+    this.lblCerrar.Text = "X";
+    this.lblCerrar.Click += new System.EventHandler(this.lblCerrar_Click);
+
+    this.lblTitulo.AutoSize = true;
+    this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold);
+    this.lblTitulo.ForeColor = System.Drawing.Color.White;
+    this.lblTitulo.Location = new System.Drawing.Point(20, 12);
+    this.lblTitulo.Name = "lblTitulo";
+    this.lblTitulo.Size = new System.Drawing.Size(160, 26);
+    this.lblTitulo.TabIndex = 0;
+    this.lblTitulo.Text = "Gestión Usuarios";
+
+    // **PANEL PRINCIPAL (Foto + Datos + Botones)**
+    this.panel2.Controls.Add(this.panelFoto);
+    this.panel2.Controls.Add(this.panelDatos);
+    this.panel2.Controls.Add(this.panelBotones);
+    this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+    this.panel2.Location = new System.Drawing.Point(0, 50);
+    this.panel2.Name = "panel2";
+    this.panel2.Size = new System.Drawing.Size(1000, 200);
+    this.panel2.TabIndex = 1;
+
+    // **PANEL FOTO (IZQUIERDA)**
+    this.panelFoto.Location = new System.Drawing.Point(20, 20);
+    this.panelFoto.Name = "panelFoto";
+    this.panelFoto.Size = new System.Drawing.Size(160, 160);
+    this.panelFoto.TabIndex = 0;
+    this.panelFoto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+
+    this.picEliminarFoto.BackColor = System.Drawing.Color.Red;
+    this.picEliminarFoto.Cursor = System.Windows.Forms.Cursors.Hand;
+    this.picEliminarFoto.Location = new System.Drawing.Point(125, 0);
+    this.picEliminarFoto.Name = "picEliminarFoto";
+    this.picEliminarFoto.Size = new System.Drawing.Size(35, 35);
+    this.picEliminarFoto.TabIndex = 2;
+    this.picEliminarFoto.TabStop = false;
+    this.picEliminarFoto.SizeMode = PictureBoxSizeMode.CenterImage;
+    this.picEliminarFoto.Click += new System.EventHandler(this.picEliminarFoto_Click);
+
+    this.picBuscarFoto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0))), ((int)(((byte)(192))), ((int)(((byte)(0)))));
+    this.picBuscarFoto.Cursor = System.Windows.Forms.Cursors.Hand;
+    this.picBuscarFoto.Location = new System.Drawing.Point(90, 0);
+    this.picBuscarFoto.Name = "picBuscarFoto";
+    this.picBuscarFoto.Size = new System.Drawing.Size(35, 35);
+    this.picBuscarFoto.TabIndex = 1;
+    this.picBuscarFoto.TabStop = false;
+    this.picBuscarFoto.SizeMode = PictureBoxSizeMode.CenterImage;
+    this.picBuscarFoto.Click += new System.EventHandler(this.picBuscarFoto_Click);
+
+    this.picFoto.BackColor = System.Drawing.Color.Gainsboro;
+    this.picFoto.Location = new System.Drawing.Point(0, 35);
+    this.picFoto.Name = "picFoto";
+    this.picFoto.Size = new System.Drawing.Size(160, 125);
+    this.picFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+    this.picFoto.TabIndex = 0;
+    this.picFoto.TabStop = false;
+    this.panelFoto.Controls.Add(this.picEliminarFoto);
+    this.panelFoto.Controls.Add(this.picBuscarFoto);
+    this.panelFoto.Controls.Add(this.picFoto);
+
+    // **PANEL DATOS (CAMPOS DE TEXTO - DERECHA)**
+    this.panelDatos.Location = new System.Drawing.Point(200, 20);
+    this.panelDatos.Name = "panelDatos";
+    this.panelDatos.Size = new System.Drawing.Size(600, 160);
+    this.panelDatos.TabIndex = 1;
+
+    // ID (fila 1)
+    this.lblId.AutoSize = true;
+    this.lblId.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+    this.lblId.ForeColor = System.Drawing.Color.White;
+    this.lblId.Location = new System.Drawing.Point(0, 5);
+    this.lblId.Name = "lblId";
+    this.lblId.Size = new System.Drawing.Size(25, 15);
+    this.lblId.TabIndex = 0;
+    this.lblId.Text = "ID:";
+    this.panelDatos.Controls.Add(this.lblId);
+
+    this.txtId.Location = new System.Drawing.Point(0, 25);
+    this.txtId.Name = "txtId";
+    this.txtId.Size = new System.Drawing.Size(100, 23);
+    this.txtId.TabIndex = 1;
+    this.panelDatos.Controls.Add(this.txtId);
+
+    // UserName (fila 2)
+    this.lblUserName.AutoSize = true;
+    this.lblUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+    this.lblUserName.ForeColor = System.Drawing.Color.White;
+    this.lblUserName.Location = new System.Drawing.Point(0, 55);
+    this.lblUserName.Name = "lblUserName";
+    this.lblUserName.Size = new System.Drawing.Size(80, 15);
+    this.lblUserName.TabIndex = 2;
+    this.lblUserName.Text = "Usuario:";
+    this.panelDatos.Controls.Add(this.lblUserName);
+
+    this.txtUserName.Location = new System.Drawing.Point(0, 75);
+    this.txtUserName.Name = "txtUserName";
+    this.txtUserName.Size = new System.Drawing.Size(200, 23);
+    this.txtUserName.TabIndex = 3;
+    this.panelDatos.Controls.Add(this.txtUserName);
+
+    // Password (fila 3)
+    this.lblPassword.AutoSize = true;
+    this.lblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+    this.lblPassword.ForeColor = System.Drawing.Color.White;
+    this.lblPassword.Location = new System.Drawing.Point(220, 55);
+    this.lblPassword.Name = "lblPassword";
+    this.lblPassword.Size = new System.Drawing.Size(85, 15);
+    this.lblPassword.TabIndex = 4;
+    this.lblPassword.Text = "Password:";
+    this.panelDatos.Controls.Add(this.lblPassword);
+
+    this.txtPassword.Location = new System.Drawing.Point(220, 75);
+    this.txtPassword.Name = "txtPassword";
+    this.txtPassword.Size = new System.Drawing.Size(200, 23);
+    this.txtPassword.TabIndex = 5;
+    this.txtPassword.UseSystemPasswordChar = true;
+    this.panelDatos.Controls.Add(this.txtPassword);
+
+    // Nombre (fila 4)
+    this.lblNombre.AutoSize = true;
+    this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+    this.lblNombre.ForeColor = System.Drawing.Color.White;
+    this.lblNombre.Location = new System.Drawing.Point(0, 105);
+    this.lblNombre.Name = "lblNombre";
+    this.lblNombre.Size = new System.Drawing.Size(60, 15);
+    this.lblNombre.TabIndex = 6;
+    this.lblNombre.Text = "Nombre:";
+    this.panelDatos.Controls.Add(this.lblNombre);
+
+    this.txtNombre.Location = new System.Drawing.Point(0, 125);
+    this.txtNombre.Name = "txtNombre";
+    this.txtNombre.Size = new System.Drawing.Size(200, 23);
+    this.txtNombre.TabIndex = 7;
+    this.panelDatos.Controls.Add(this.txtNombre);
+
+    // Apellido (fila 5)
+    this.lblApellido.AutoSize = true;
+    this.lblApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+    this.lblApellido.ForeColor = System.Drawing.Color.White;
+    this.lblApellido.Location = new System.Drawing.Point(220, 105);
+    this.lblApellido.Name = "lblApellido";
+    this.lblApellido.Size = new System.Drawing.Size(65, 15);
+    this.lblApellido.TabIndex = 8;
+    this.lblApellido.Text = "Apellido:";
+    this.panelDatos.Controls.Add(this.lblApellido);
+
+    this.txtApellido.Location = new System.Drawing.Point(220, 125);
+    this.txtApellido.Name = "txtApellido";
+    this.txtApellido.Size = new System.Drawing.Size(200, 23);
+    this.txtApellido.TabIndex = 9;
+    this.panelDatos.Controls.Add(this.txtApellido);
+
+    // Email (fila 6 - debajo)
+    this.lblEmail.AutoSize = true;
+    this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+    this.lblEmail.ForeColor = System.Drawing.Color.White;
+    this.lblEmail.Location = new System.Drawing.Point(440, 5);
+    this.lblEmail.Name = "lblEmail";
+    this.lblEmail.Size = new System.Drawing.Size(48, 15);
+    this.lblEmail.TabIndex = 10;
+    this.lblEmail.Text = "Email:";
+    this.panelDatos.Controls.Add(this.lblEmail);
+
+    this.txtEmail.Location = new System.Drawing.Point(440, 25);
+    this.txtEmail.Name = "txtEmail";
+    this.txtEmail.Size = new System.Drawing.Size(250, 23);
+    this.txtEmail.TabIndex = 11;
+    this.panelDatos.Controls.Add(this.txtEmail);
+
+    // Rol (fila 7)
+    this.lblRol.AutoSize = true;
+    this.lblRol.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+    this.lblRol.ForeColor = System.Drawing.Color.White;
+    this.lblRol.Location = new System.Drawing.Point(440, 55);
+    this.lblRol.Name = "lblRol";
+    this.lblRol.Size = new System.Drawing.Size(35, 15);
+    this.lblRol.TabIndex = 12;
+    this.lblRol.Text = "Rol:";
+    this.panelDatos.Controls.Add(this.lblRol);
+
+    this.cbxRol.DropDownStyle = ComboBoxStyle.DropDownList;
+    this.cbxRol.FormattingEnabled = true;
+    this.cbxRol.Items.AddRange(new object[] { "Administrador", "Recepcionista" });
+    this.cbxRol.Location = new System.Drawing.Point(440, 75);
+    this.cbxRol.Name = "cbxRol";
+    this.cbxRol.Size = new System.Drawing.Size(150, 23);
+    this.cbxRol.TabIndex = 13;
+    this.panelDatos.Controls.Add(this.cbxRol);
+
+    // FechaCreacion (fila 8)
+    this.lblFechaCreacion.AutoSize = true;
+    this.lblFechaCreacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+    this.lblFechaCreacion.ForeColor = System.Drawing.Color.White;
+    this.lblFechaCreacion.Location = new System.Drawing.Point(440, 105);
+    this.lblFechaCreacion.Name = "lblFechaCreacion";
+    this.lblFechaCreacion.Size = new System.Drawing.Size(110, 15);
+    this.lblFechaCreacion.TabIndex = 14;
+    this.lblFechaCreacion.Text = "Fecha Creación:";
+    this.panelDatos.Controls.Add(this.lblFechaCreacion);
+
+    this.dtFechaCreacion.Format = DateTimePickerFormat.Short;
+    this.dtFechaCreacion.Location = new System.Drawing.Point(440, 125);
+    this.dtFechaCreacion.Name = "dtFechaCreacion";
+    this.dtFechaCreacion.Size = new System.Drawing.Size(150, 23);
+    this.dtFechaCreacion.TabIndex = 15;
+    this.panelDatos.Controls.Add(this.dtFechaCreacion);
+
+    // **PANEL BOTONES (ABAJO)**
+    this.panelBotones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35))), ((int)(((byte)(35))), ((int)(((byte)(40)))));
+    this.panelBotones.Dock = System.Windows.Forms.DockStyle.Bottom;
+    this.panelBotones.Location = new System.Drawing.Point(0, 160);
+    this.panelBotones.Name = "panelBotones";
+    this.panelBotones.Size = new System.Drawing.Size(1000, 40);
+    this.panelBotones.TabIndex = 2;
+    this.panel2.Controls.Add(this.panelBotones);
+
+    this.btnNuevo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0))), ((int)(((byte)(192))), ((int)(((byte)(0)))));
+    this.btnNuevo.FlatAppearance.BorderSize = 0;
+    this.btnNuevo.FlatStyle = FlatStyle.Flat;
+    this.btnNuevo.ForeColor = System.Drawing.Color.White;
+    this.btnNuevo.Location = new System.Drawing.Point(20, 5);
+    this.btnNuevo.Name = "btnNuevo";
+    this.btnNuevo.Size = new System.Drawing.Size(100, 30);
+    this.btnNuevo.TabIndex = 0;
+    this.btnNuevo.Text = "Nuevo";
+    this.btnNuevo.UseVisualStyleBackColor = false;
+    this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
+    this.panelBotones.Controls.Add(this.btnNuevo);
+
+    this.btnGuardar.BackColor = System.Drawing.Color.DodgerBlue;
+    this.btnGuardar.FlatAppearance.BorderSize = 0;
+    this.btnGuardar.FlatStyle = FlatStyle.Flat;
+    this.btnGuardar.ForeColor = System.Drawing.Color.White;
+    this.btnGuardar.Location = new System.Drawing.Point(130, 5);
+    this.btnGuardar.Name = "btnGuardar";
+    this.btnGuardar.Size = new System.Drawing.Size(100, 30);
+    this.btnGuardar.TabIndex = 1;
+    this.btnGuardar.Text = "Guardar";
+    this.btnGuardar.UseVisualStyleBackColor = false;
+    this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+    this.panelBotones.Controls.Add(this.btnGuardar);
+
+    this.btnActualizar.BackColor = System.Drawing.Color.Orange;
+    this.btnActualizar.FlatAppearance.BorderSize = 0;
+    this.btnActualizar.FlatStyle = FlatStyle.Flat;
+    this.btnActualizar.ForeColor = System.Drawing.Color.White;
+    this.btnActualizar.Location = new System.Drawing.Point(240, 5);
+    this.btnActualizar.Name = "btnActualizar";
+    this.btnActualizar.Size = new System.Drawing.Size(100, 30);
+    this.btnActualizar.TabIndex = 2;
+    this.btnActualizar.Text = "Actualizar";
+    this.btnActualizar.UseVisualStyleBackColor = false;
+    this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
+    this.panelBotones.Controls.Add(this.btnActualizar);
+
+    this.btnEliminar.BackColor = System.Drawing.Color.Red;
+    this.btnEliminar.FlatAppearance.BorderSize = 0;
+    this.btnEliminar.FlatStyle = FlatStyle.Flat;
+    this.btnEliminar.ForeColor = System.Drawing.Color.White;
+    this.btnEliminar.Location = new System.Drawing.Point(350, 5);
+    this.btnEliminar.Name = "btnEliminar";
+    this.btnEliminar.Size = new System.Drawing.Size(100, 30);
+    this.btnEliminar.TabIndex = 3;
+    this.btnEliminar.Text = "Eliminar";
+    this.btnEliminar.UseVisualStyleBackColor = false;
+    this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+    this.panelBotones.Controls.Add(this.btnEliminar);
+
+    // **DATAGRIDVIEW (ABAJO DE TODO)**
+    this.dgUsuarios.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+    this.dgUsuarios.BorderStyle = BorderStyle.None;
+    this.dgUsuarios.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+    this.dgUsuarios.Dock = System.Windows.Forms.DockStyle.Fill;
+    this.dgUsuarios.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(65)))));
+    this.dgUsuarios.Location = new System.Drawing.Point(0, 250);
+    this.dgUsuarios.Name = "dgUsuarios";
+    this.dgUsuarios.RowHeadersVisible = false;
+    this.dgUsuarios.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+    this.dgUsuarios.Size = new System.Drawing.Size(1000, 400);
+    this.dgUsuarios.TabIndex = 2;
+    this.dgUsuarios.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgUsuarios_CellContentDoubleClick);
+
+    // **FORM PRINCIPAL**
+    this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+    this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+    this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+    this.ClientSize = new System.Drawing.Size(1000, 650);
+    this.Controls.Add(this.dgUsuarios);
+    this.Controls.Add(this.panel2);
+    this.Controls.Add(this.panel1);
+    this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+    this.Name = "UsuariosUI";
+    this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+    this.Text = "Gestión de Usuarios";
+    this.Load += new System.EventHandler(this.UsuariosUILoad);
+
+    ((System.ComponentModel.ISupportInitialize)(this.dgUsuarios)).EndInit();
+    this.panel1.ResumeLayout(false);
+    this.panel1.PerformLayout();
+    this.panel2.ResumeLayout(false);
+    this.panelFoto.ResumeLayout(false);
+    ((System.ComponentModel.ISupportInitialize)(this.picEliminarFoto)).EndInit();
+    ((System.ComponentModel.ISupportInitialize)(this.picBuscarFoto)).EndInit();
+    ((System.ComponentModel.ISupportInitialize)(this.picFoto)).EndInit();
+    this.panelDatos.ResumeLayout(false);
+    this.panelDatos.PerformLayout();
+    this.panelBotones.ResumeLayout(false);
+    this.ResumeLayout(false);
+}

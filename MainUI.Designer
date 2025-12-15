@@ -1,0 +1,184 @@
+﻿using System.Drawing;
+using System.Windows.Forms;
+
+namespace ClinicaApp._JP1._0.UI
+{
+    partial class MainUI {
+        private System.ComponentModel.IContainer components = null;
+        private Panel panelHeader;
+        private Panel panelMenu;
+        private Panel pnlContainer;
+        private Label lblUser;
+        private Label lblClose;
+        private Button btnUsuarios;
+        private Button btnCitas;
+        private Button btnPacientes;
+        private Button btnDoctores;
+        private Button btnEspecialidades;
+        private Button btnEPS;
+
+        protected override void Dispose(bool disposing) {
+            if (disposing && (components != null)) components.Dispose();
+            base.Dispose(disposing);
+        }
+
+        private void InitializeComponent() {
+            this.panelHeader = new Panel();
+            this.lblUser = new Label();
+            this.lblClose = new Label();
+            this.panelMenu = new Panel();
+            this.btnUsuarios = new Button();
+            this.btnCitas = new Button();
+            this.btnPacientes = new Button();
+            this.btnDoctores = new Button();
+            this.btnEspecialidades = new Button();
+            this.btnEPS = new Button();
+            this.pnlContainer = new Panel();
+            this.panelHeader.SuspendLayout();
+            this.panelMenu.SuspendLayout();
+            this.SuspendLayout();
+
+            // panelHeader
+            this.panelHeader.BackColor = Color.FromArgb(21, 19, 20);
+            this.panelHeader.Controls.Add(this.lblClose);
+            this.panelHeader.Controls.Add(this.lblUser);
+            this.panelHeader.Dock = DockStyle.Top;
+            this.panelHeader.Location = new Point(0, 0);
+            this.panelHeader.Name = "panelHeader";
+            this.panelHeader.Size = new Size(1200, 80);
+            this.panelHeader.TabIndex = 0;
+
+            // lblUser
+            this.lblUser.AutoSize = true;
+            this.lblUser.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            this.lblUser.ForeColor = Color.White;
+            this.lblUser.Location = new Point(250, 25);
+            this.lblUser.Name = "lblUser";
+            this.lblUser.Size = new Size(150, 32);
+            this.lblUser.Text = "BIENVENIDO";
+
+            // lblClose
+            this.lblClose.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            this.lblClose.AutoSize = true;
+            this.lblClose.Cursor = Cursors.Hand;
+            this.lblClose.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
+            this.lblClose.ForeColor = Color.Red;
+            this.lblClose.Location = new Point(1140, 20);
+            this.lblClose.Name = "lblClose";
+            this.lblClose.Size = new Size(35, 38);
+            this.lblClose.TabIndex = 1;
+            this.lblClose.Text = "X";
+
+            // panelMenu
+            this.panelMenu.BackColor = Color.FromArgb(52, 73, 94);
+            this.panelMenu.Controls.Add(this.btnUsuarios);
+            this.panelMenu.Controls.Add(this.btnCitas);
+            this.panelMenu.Controls.Add(this.btnPacientes);
+            this.panelMenu.Controls.Add(this.btnDoctores);
+            this.panelMenu.Controls.Add(this.btnEspecialidades);
+            this.panelMenu.Controls.Add(this.btnEPS);
+            this.panelMenu.Dock = DockStyle.Left;
+            this.panelMenu.Location = new Point(0, 80);
+            this.panelMenu.Name = "panelMenu";
+            this.panelMenu.Size = new Size(250, 720);
+            this.panelMenu.TabIndex = 1;
+
+            // btnEPS
+            this.btnEPS.BackColor = Color.FromArgb(44, 62, 80);
+            this.btnEPS.FlatAppearance.BorderSize = 0;
+            this.btnEPS.FlatStyle = FlatStyle.Flat;
+            this.btnEPS.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            this.btnEPS.ForeColor = Color.White;
+            this.btnEPS.Location = new Point(20, 120);
+            this.btnEPS.Name = "btnEPS";
+            this.btnEPS.Size = new Size(210, 60);
+            this.btnEPS.Text = "EPS";
+            this.btnEPS.UseVisualStyleBackColor = false;
+
+            // btnEspecialidades
+            this.btnEspecialidades.BackColor = Color.FromArgb(44, 62, 80);
+            this.btnEspecialidades.FlatAppearance.BorderSize = 0;
+            this.btnEspecialidades.FlatStyle = FlatStyle.Flat;
+            this.btnEspecialidades.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            this.btnEspecialidades.ForeColor = Color.White;
+            this.btnEspecialidades.Location = new Point(20, 200);
+            this.btnEspecialidades.Name = "btnEspecialidades";
+            this.btnEspecialidades.Size = new Size(210, 60);
+            this.btnEspecialidades.Text = "Especialidades";
+            this.btnEspecialidades.UseVisualStyleBackColor = false;
+
+            // btnDoctores
+            this.btnDoctores.BackColor = Color.FromArgb(44, 62, 80);
+            this.btnDoctores.FlatAppearance.BorderSize = 0;
+            this.btnDoctores.FlatStyle = FlatStyle.Flat;
+            this.btnDoctores.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            this.btnDoctores.ForeColor = Color.White;
+            this.btnDoctores.Location = new Point(20, 280);
+            this.btnDoctores.Name = "btnDoctores";
+            this.btnDoctores.Size = new Size(210, 60);
+            this.btnDoctores.Text = "Doctores";
+            this.btnDoctores.UseVisualStyleBackColor = false;
+
+            // btnPacientes
+            this.btnPacientes.BackColor = Color.FromArgb(44, 62, 80);
+            this.btnPacientes.FlatAppearance.BorderSize = 0;
+            this.btnPacientes.FlatStyle = FlatStyle.Flat;
+            this.btnPacientes.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            this.btnPacientes.ForeColor = Color.White;
+            this.btnPacientes.Location = new Point(20, 360);
+            this.btnPacientes.Name = "btnPacientes";
+            this.btnPacientes.Size = new Size(210, 60);
+            this.btnPacientes.Text = "Pacientes";
+            this.btnPacientes.UseVisualStyleBackColor = false;
+
+            // btnCitas
+            this.btnCitas.BackColor = Color.FromArgb(44, 62, 80);
+            this.btnCitas.FlatAppearance.BorderSize = 0;
+            this.btnCitas.FlatStyle = FlatStyle.Flat;
+            this.btnCitas.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            this.btnCitas.ForeColor = Color.White;
+            this.btnCitas.Location = new Point(20, 440);
+            this.btnCitas.Name = "btnCitas";
+            this.btnCitas.Size = new Size(210, 60);
+            this.btnCitas.Text = "Citas";
+            this.btnCitas.UseVisualStyleBackColor = false;
+
+            // btnUsuarios
+            this.btnUsuarios.BackColor = Color.FromArgb(44, 62, 80);
+            this.btnUsuarios.FlatAppearance.BorderSize = 0;
+            this.btnUsuarios.FlatStyle = FlatStyle.Flat;
+            this.btnUsuarios.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            this.btnUsuarios.ForeColor = Color.White;
+            this.btnUsuarios.Location = new Point(20, 520);
+            this.btnUsuarios.Name = "btnUsuarios";
+            this.btnUsuarios.Size = new Size(210, 60);
+            this.btnUsuarios.Text = "Usuarios";
+            this.btnUsuarios.UseVisualStyleBackColor = false;
+
+            // pnlContainer
+            this.pnlContainer.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            this.pnlContainer.BackColor = Color.White;
+            this.pnlContainer.Location = new Point(250, 80);
+            this.pnlContainer.Name = "pnlContainer";
+            this.pnlContainer.Size = new Size(950, 720);
+            this.pnlContainer.TabIndex = 2;
+
+            // MainUI
+            this.AutoScaleDimensions = new SizeF(8F, 20F);
+            this.AutoScaleMode = AutoScaleMode.Font;
+            this.ClientSize = new Size(1200, 800);
+            this.Controls.Add(this.pnlContainer);
+            this.Controls.Add(this.panelMenu);
+            this.Controls.Add(this.panelHeader);
+            this.FormBorderStyle = FormBorderStyle.None;
+            this.Name = "MainUI";
+            this.StartPosition = FormStartPosition.CenterScreen;
+            this.Text = "Sistema Clínica";
+            this.WindowState = FormWindowState.Maximized;
+            this.panelHeader.ResumeLayout(false);
+            this.panelHeader.PerformLayout();
+            this.panelMenu.ResumeLayout(false);
+            this.ResumeLayout(false);
+        }
+    }
+}
