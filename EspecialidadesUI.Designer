@@ -1,0 +1,216 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ClinicaApp._JP1._0.UI
+{
+   partial class EspecialidadesUI {
+        private System.ComponentModel.IContainer components = null;
+        private DataGridView dgEspecialidades;
+        private TextBox txtId;
+        private TextBox txtNombre;
+        private TextBox txtDescripcion;
+        private Button btnNuevo;
+        private Button btnGuardar;
+        private Button btnActualizar;
+        private Button btnEliminar;
+        private Button btnLimpiar;
+        private Label lblClose;
+        private Label lblId;
+        private Label lblNombre;
+        private Label lblDescripcion;
+        private Panel panel1;
+
+        protected override void Dispose(bool disposing) {
+            if (disposing && (components != null)) {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        private void InitializeComponent() {
+            this.dgEspecialidades = new DataGridView();
+            this.txtId = new TextBox();
+            this.txtNombre = new TextBox();
+            this.txtDescripcion = new TextBox();
+            this.btnNuevo = new Button();
+            this.btnGuardar = new Button();
+            this.btnActualizar = new Button();
+            this.btnEliminar = new Button();
+            this.btnLimpiar = new Button();
+            this.lblClose = new Label();
+            this.lblId = new Label();
+            this.lblNombre = new Label();
+            this.lblDescripcion = new Label();
+            this.panel1 = new Panel();
+            ((System.ComponentModel.ISupportInitialize)(this.dgEspecialidades)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.SuspendLayout();
+
+            // dgEspecialidades
+            this.dgEspecialidades.AllowUserToAddRows = false;
+            this.dgEspecialidades.AllowUserToDeleteRows = false;
+            this.dgEspecialidades.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            this.dgEspecialidades.AutoGenerateColumns = false;
+            this.dgEspecialidades.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgEspecialidades.Location = new Point(12, 120);
+            this.dgEspecialidades.Name = "dgEspecialidades";
+            this.dgEspecialidades.ReadOnly = true;
+            this.dgEspecialidades.RowHeadersWidth = 62;
+            this.dgEspecialidades.RowTemplate.Height = 32;
+            this.dgEspecialidades.Size = new Size(976, 468);
+            this.dgEspecialidades.TabIndex = 0;
+            this.dgEspecialidades.CellContentDoubleClick += new DataGridViewCellEventHandler(this.dgEspecialidades_CellContentDoubleClick);
+
+            // txtId
+            this.txtId.Location = new Point(120, 25);
+            this.txtId.Name = "txtId";
+            this.txtId.ReadOnly = true;
+            this.txtId.Size = new Size(150, 27);
+            this.txtId.TabIndex = 1;
+
+            // txtNombre
+            this.txtNombre.Location = new Point(120, 58);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new Size(300, 27);
+            this.txtNombre.TabIndex = 2;
+
+            // txtDescripcion
+            this.txtDescripcion.Location = new Point(120, 91);
+            this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.Size = new Size(500, 27);
+            this.txtDescripcion.TabIndex = 3;
+
+            // btnNuevo
+            this.btnNuevo.BackColor = Color.FromArgb(46, 125, 50);
+            this.btnNuevo.ForeColor = Color.White;
+            this.btnNuevo.Location = new Point(650, 25);
+            this.btnNuevo.Name = "btnNuevo";
+            this.btnNuevo.Size = new Size(100, 35);
+            this.btnNuevo.TabIndex = 4;
+            this.btnNuevo.Text = "Nuevo";
+            this.btnNuevo.UseVisualStyleBackColor = false;
+            this.btnNuevo.Click += new EventHandler(this.btnNuevo_Click);
+
+            // btnGuardar
+            this.btnGuardar.BackColor = Color.FromArgb(33, 150, 243);
+            this.btnGuardar.ForeColor = Color.White;
+            this.btnGuardar.Location = new Point(760, 25);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new Size(100, 35);
+            this.btnGuardar.TabIndex = 5;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.UseVisualStyleBackColor = false;
+            this.btnGuardar.Click += new EventHandler(this.btnGuardar_Click);
+
+            // btnActualizar
+            this.btnActualizar.BackColor = Color.FromArgb(255, 193, 7);
+            this.btnActualizar.ForeColor = Color.Black;
+            this.btnActualizar.Location = new Point(650, 66);
+            this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.Size = new Size(100, 35);
+            this.btnActualizar.TabIndex = 6;
+            this.btnActualizar.Text = "Actualizar";
+            this.btnActualizar.UseVisualStyleBackColor = false;
+            this.btnActualizar.Click += new EventHandler(this.btnActualizar_Click);
+
+            // btnEliminar
+            this.btnEliminar.BackColor = Color.FromArgb(244, 67, 54);
+            this.btnEliminar.ForeColor = Color.White;
+            this.btnEliminar.Location = new Point(760, 66);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new Size(100, 35);
+            this.btnEliminar.TabIndex = 7;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new EventHandler(this.btnEliminar_Click);
+
+            // btnLimpiar
+            this.btnLimpiar.BackColor = Color.Gray;
+            this.btnLimpiar.ForeColor = Color.White;
+            this.btnLimpiar.Location = new Point(870, 25);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new Size(100, 35);
+            this.btnLimpiar.TabIndex = 8;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = false;
+            this.btnLimpiar.Click += new EventHandler(this.btnLimpiar_Click);
+
+            // lblClose
+            this.lblClose.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            this.lblClose.AutoSize = true;
+            this.lblClose.Cursor = Cursors.Hand;
+            this.lblClose.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            this.lblClose.ForeColor = Color.Red;
+            this.lblClose.Location = new Point(960, 12);
+            this.lblClose.Name = "lblClose";
+            this.lblClose.Size = new Size(28, 32);
+            this.lblClose.TabIndex = 9;
+            this.lblClose.Text = "X";
+            this.lblClose.Click += new EventHandler(this.lblClose_Click);
+
+            // lblId
+            this.lblId.AutoSize = true;
+            this.lblId.Location = new Point(12, 28);
+            this.lblId.Name = "lblId";
+            this.lblId.Size = new Size(21, 20);
+            this.lblId.TabIndex = 10;
+            this.lblId.Text = "ID:";
+
+            // lblNombre
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.Location = new Point(12, 61);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new Size(64, 20);
+            this.lblNombre.TabIndex = 11;
+            this.lblNombre.Text = "Nombre:";
+
+            // lblDescripcion
+            this.lblDescripcion.AutoSize = true;
+            this.lblDescripcion.Location = new Point(12, 94);
+            this.lblDescripcion.Name = "lblDescripcion";
+            this.lblDescripcion.Size = new Size(92, 20);
+            this.lblDescripcion.TabIndex = 12;
+            this.lblDescripcion.Text = "Descripción:";
+
+            // panel1
+            this.panel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            this.panel1.BackColor = Color.FromArgb(45, 45, 48);
+            this.panel1.Controls.Add(this.lblClose);
+            this.panel1.Controls.Add(this.dgEspecialidades);
+            this.panel1.Controls.Add(this.btnLimpiar);
+            this.panel1.Controls.Add(this.btnEliminar);
+            this.panel1.Controls.Add(this.btnActualizar);
+            this.panel1.Controls.Add(this.btnGuardar);
+            this.panel1.Controls.Add(this.btnNuevo);
+            this.panel1.Controls.Add(this.txtDescripcion);
+            this.panel1.Controls.Add(this.txtNombre);
+            this.panel1.Controls.Add(this.txtId);
+            this.panel1.Controls.Add(this.lblDescripcion);
+            this.panel1.Controls.Add(this.lblNombre);
+            this.panel1.Controls.Add(this.lblId);
+            this.panel1.ForeColor = Color.White;
+            this.panel1.Location = new Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new Size(1000, 600);
+            this.panel1.TabIndex = 13;
+
+            // EspecialidadesUI
+            this.AutoScaleDimensions = new SizeF(8F, 20F);
+            this.AutoScaleMode = AutoScaleMode.Font;
+            this.ClientSize = new Size(1000, 600);
+            this.Controls.Add(this.panel1);
+            this.FormBorderStyle = FormBorderStyle.None;
+            this.Name = "EspecialidadesUI";
+            this.StartPosition = FormStartPosition.CenterScreen;
+            this.Text = "Gestión de Especialidades";
+            this.Load += new EventHandler(this.EspecialidadesUILoad);
+            ((System.ComponentModel.ISupportInitialize)(this.dgEspecialidades)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.ResumeLayout(false);
+        }
+    }
+}
